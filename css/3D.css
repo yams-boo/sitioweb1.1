@@ -1,0 +1,36 @@
+.lets-icons--3d-box-fill {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='m9.675 19.34l-3-2.144c-.821-.586-1.232-.88-1.453-1.31C5 15.456 5 14.95 5 13.942v-3.883c0-.322 0-.592.007-.825L11 13.514v6.717c-.357-.2-.773-.498-1.325-.892M13 20.23c.357-.2.773-.498 1.325-.892l3-2.143c.821-.586 1.232-.88 1.453-1.31c.222-.43.222-.935.222-1.944v-3.883c0-.322 0-.592-.007-.825L13 13.514zm5.128-12.837L12 11.771L5.872 7.394c.212-.168.475-.356.803-.59l3-2.143C10.798 3.859 11.36 3.458 12 3.458c.64 0 1.202.4 2.325 1.203l3 2.143c.329.234.591.422.803.59' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    font-size: 500px; /* Ajusta el tamaño del icono según tus necesidades */
+    color: #d4d4d4; /* Cambia el color del icono según tus necesidades */
+    animation: spin 3s linear infinite; /* Animación de rotación */
+    position: relative; /* Posición relativa para la sombra */
+  }
+  
+  .lets-icons--3d-box-fill::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Distancia de la sombra */
+    left: 0;
+    width: 100%;
+    height: 10px; /* Altura de la sombra */
+    background: rgba(0, 0, 0, 0.4); /* Color de la sombra */
+    border-radius: 50%; /* Redondea la sombra */
+    transform-origin: bottom; /* Origen de la transformación */
+    transform: rotateX(90deg); /* Transformación para la sombra */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+  }
+  
